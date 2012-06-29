@@ -1,4 +1,3 @@
-
 Overview
 
 This module will install Torqubox along with it's supplied JRuby. It's been
@@ -17,21 +16,22 @@ You'll find the installation at /opt/torquebox/current.  It also adds an
 upstart script so you can use 'start torquebox' or 'stop torquebox' to control
 the server. Environment variables are kept in /etc/profile.d/torquebox.sh.
 
-This module does not install any proxies (such as Apache Proxy). If you wish to proxy
-your web apps you are free to do so, you'll just need to add the appropriate module to
-your node and configure.
+This module does not install any proxies (such as Apache Proxy). If you wish 
+to proxy your web apps you are free to do so, you'll just need to add the 
+appropriate module to your node and configure.
 
 
 About Torquebox
 
-TorqueBox is a new kind of Ruby application platform that integrates popular technologies 
-such as Ruby on Rails, while extending the footprint of Ruby applications to include 
-built-in support for services such as messaging, scheduling, and daemons.
+TorqueBox is a new kind of Ruby application platform that integrates popular 
+technologies such as Ruby on Rails, while extending the footprint of Ruby 
+applications to include built-in support for services such as messaging, 
+scheduling, and daemons.
 
-TorqueBox provides an all-in-one environment, built upon the latest, most powerful JBoss AS
-Java application server. Functionality such as clustering, load-balancing and 
-high-availability is included right out-of-the-box. Visit http://torquebox.org/about/ to 
-learn more.
+TorqueBox provides an all-in-one environment, built upon the latest, most 
+powerful JBoss AS Java application server. Functionality such as clustering, 
+load-balancing and high-availability is included right out-of-the-box. 
+Visit http://torquebox.org/about/ to learn more.
 
 
 
