@@ -23,8 +23,8 @@ class torquebox::install {
     cwd => "/root/src",
     command => "/usr/bin/wget -N http://torquebox.org/release/org/torquebox/torquebox-dist/2.0.3/torquebox-dist-2.0.3-bin.zip &&
                 /usr/bin/unzip torquebox-dist-2.0.3-bin.zip && 
-                /bin/mv torquebox-2.0.3 /opt/torquebox/torquebox-2.0.3 &&
-                /bin/ln -s /opt/torquebox/torquebox-2.0.3 /opt/torquebox/current &&
+                /bin/mv torquebox-2.0.3 /opt/torquebox/2.0.3 &&
+                /bin/ln -s /opt/torquebox/2.0.3 /opt/torquebox/current &&
                 /bin/chown -R torquebox:torquebox /opt/torquebox",
     creates => "/opt/torquebox/current/jboss/bin/standalone.sh",
     logoutput => on_failure,
