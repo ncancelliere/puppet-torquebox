@@ -1,0 +1,59 @@
+
+Overview
+
+This module will install Torqubox along with it's supplied JRuby. It's been
+tested on Ubuntu 12.04 LTS (Precise).
+
+
+Example Use
+
+Simply include this module in your node, that's it!
+
+node 'my.node.com' {
+  include torquebox
+}
+
+You'll find the installation at /opt/torquebox/current.  It also adds an
+upstart script so you can use 'start torquebox' or 'stop torquebox' to control
+the server. Environment variables are kept in /etc/profile.d/torquebox.sh.
+
+This module does not install any proxies (such as Apache Proxy). If you wish to proxy
+your web apps you are free to do so, you'll just need to add the appropriate module to
+your node and configure.
+
+
+About Torquebox
+
+TorqueBox is a new kind of Ruby application platform that integrates popular technologies 
+such as Ruby on Rails, while extending the footprint of Ruby applications to include 
+built-in support for services such as messaging, scheduling, and daemons.
+
+TorqueBox provides an all-in-one environment, built upon the latest, most powerful JBoss AS
+Java application server. Functionality such as clustering, load-balancing and 
+high-availability is included right out-of-the-box. Visit http://torquebox.org/about/ to 
+learn more.
+
+
+
+
+Copyright (C) 2012 Nicholas Cancelliere
+
+Permission is hereby granted, free of charge, to any person obtaining 
+a copy of this software and associated documentation files 
+(the "Software"), to deal in the Software without restriction, including 
+without limitation the rights to use, copy, modify, merge, publish, 
+distribute, sublicense, and/or sell copies of the Software, and to permit
+persons to whom the Software is furnished to do so, subject to the 
+following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+DEALINGS IN THE SOFTWARE.
+
